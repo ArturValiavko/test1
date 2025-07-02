@@ -26,3 +26,5 @@ if (int.TryParse(input, out int age))
 else {
     Console.WriteLine("Neteisingas formatas");
 }
+Console.WriteLine("taks3 gwf");
+//
