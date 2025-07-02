@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("C#"); //task1 
-Console.WriteLine("Mano vardas Artur"); 
+Console.WriteLine("Mano vardas Artur");
 
-
+Console.WriteLine("Sveikas C#");
 
 
