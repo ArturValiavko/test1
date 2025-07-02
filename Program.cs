@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("C#"); //task1 
+Console.WriteLine("C#"); //task0
 Console.WriteLine("Mano vardas Artur");
-
+// Task1
 Console.WriteLine("Sveikas C#");
-
+// Task2 
 Console.Write("O koks tavo vardas: ");
 string vardas = Console.ReadLine();
 Console.WriteLine($"Sveikas,{vardas}");
@@ -11,7 +11,6 @@ Console.WriteLine($"Sveikas,{vardas}");
 //Task3 
 Console.WriteLine("Įvesk savo amžių;");
 string? input = Console.ReadLine();
-
 
 if (int.TryParse(input, out int age))
 {
