@@ -27,13 +27,105 @@
 // }
 // Console.WriteLine("taks3 gwf");
 
-//Task4 
-Console.WriteLine("Įvesk skaičių nuo 1 iki 10:"); // int 
-string? number1 = Console.ReadLine();
+//Task4
+// Console.WriteLine("Įvesk skaičių nuo 1 iki 10:"); // int 
+// string? number1 = Console.ReadLine();
 
-if (int.TryParse(number1, out int result1))
+// if (int.TryParse(number1, out int result1))
+// {
+//     Console.WriteLine($"TAVO SKAIČIUS {result1}");
+// }
+// else
+// {
+//     Console.WriteLine("Neteisingas skaičius int formatui");
+// }
+
+
+// Console.WriteLine("Įvesk žodį:"); // string
+// string? tekst1 = Console.ReadLine()?.ToUpper();
+// Console.WriteLine($"TAVO ŽODIS '{tekst1}'");
+
+
+// Console.WriteLine("Savo kūno temperatūrą:"); // double
+// string? number2 = Console.ReadLine();
+// number2 = number2?.Replace(',', '.');
+
+// if (double.TryParse(number2, out double result2))
+// {
+//     Console.WriteLine($"TAVO TEMPERATŪRA {result2}");
+// }
+// else
+// {
+//     Console.WriteLine("Neteisingas skaičius double formatui");
+// }
+
+// Console.WriteLine("Ar šiandien šilta (t/n)? :"); // bool 
+// string? tekst2 = Console.ReadLine()?.ToUpper();
+
+// if (tekst2 == "T" || tekst2 == "N")
+// {
+//     bool jamšilta = tekst2 == "TAIP";
+//     Console.WriteLine(jamšilta ? "TAIP, TAU ŠILTA!" : "NE, TAU ŠALTA");
+// }
+// else
+// {
+//     Console.WriteLine("Neteisinga bool formatui");
+// }
+
+
+// string korta = "♦♣♠♥"; //char
+// Console.WriteLine("Pasirink vieną 1 - ♦ / 2 - ♣ / 3 - ♠ / 4 - ♥:"); 
+// string? number3 = Console.ReadLine();
+// if (int.TryParse(number3, out int result3))
+// {
+//     if (1 == result3)
+//     {
+//         char simbolis = korta[0];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (2 == result3)
+//     {
+//           char simbolis = korta[1];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (3 == result3)
+//     {
+//           char simbolis = korta[2];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (4 == result3)
+//     {
+//           char simbolis = korta[3];
+//         Console.WriteLine($"{simbolis}");
+//     }
+
+// }
+// else
+// {
+//     Console.WriteLine("Neteisingas formatas");
+// }
+
+
+// Task5
+Console.WriteLine("Įvesk savo vardą:");
+string? vardas = Console.ReadLine();
+
+Console.WriteLine("Įvesk savo amžių:");
+string? amžius = Console.ReadLine()?.ToUpper();
+if (int.TryParse(amžius, out int amžius2))
 {
-    Console.WriteLine($"TAVO SKAIČIUS {result1}");
+    if (amžius2 < 19)
+    {
+        Console.WriteLine($"{vardas}, tau dar negalima balsuoti.");
+    }
+    else if (amžius2 < 66)
+    {
+        Console.WriteLine($"{vardas}, tu gali balsuoti.");
+    }
+    else if (amžius2 > 65)
+    {
+        Console.WriteLine($"{vardas}, tu esi pensinio amžiaus");
+    }
 }
 else
 {
