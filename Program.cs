@@ -85,17 +85,17 @@ if (int.TryParse(number3, out int result3))
     }
     else if (2 == result3)
     {
-          char simbolis = korta[1];
+        char simbolis = korta[1];
         Console.WriteLine($"{simbolis}");
     }
     else if (3 == result3)
     {
-          char simbolis = korta[2];
+        char simbolis = korta[2];
         Console.WriteLine($"{simbolis}");
     }
     else if (4 == result3)
     {
-          char simbolis = korta[3];
+        char simbolis = korta[3];
         Console.WriteLine($"{simbolis}");
     }
 
@@ -104,3 +104,4 @@ else
 {
     Console.WriteLine("Neteisingas formatas");
 }
+Console.WriteLine("Task 4 done");
