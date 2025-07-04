@@ -140,3 +140,4 @@ for (int i = 1; i <= n; i++)
 {
     Console.WriteLine(i);
 }
+Console.Write("Task6 - Done ");
