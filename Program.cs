@@ -107,27 +107,36 @@
 
 
 // Task5
-Console.WriteLine("Įvesk savo vardą:");
-string? vardas = Console.ReadLine();
+// Console.WriteLine("Įvesk savo vardą:");
+// string? vardas = Console.ReadLine();
 
-Console.WriteLine("Įvesk savo amžių:");
-string? amžius = Console.ReadLine()?.ToUpper();
-if (int.TryParse(amžius, out int amžius2))
+// Console.WriteLine("Įvesk savo amžių:");
+// string? amžius = Console.ReadLine()?.ToUpper();
+// if (int.TryParse(amžius, out int amžius2))
+// {
+//     if (amžius2 < 19)
+//     {
+//         Console.WriteLine($"{vardas}, tau dar negalima balsuoti.");
+//     }
+//     else if (amžius2 < 66)
+//     {
+//         Console.WriteLine($"{vardas}, tu gali balsuoti.");
+//     }
+//     else if (amžius2 > 65)
+//     {
+//         Console.WriteLine($"{vardas}, tu esi pensinio amžiaus");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Įvestas neteisingas amžius.");
+// }
+
+// Task 6 
+int n;
+Console.Write("Įveskite skaičių n: ");
+n = Convert.ToInt32(Console.ReadLine()); // greitas konvertavimas 
+for (int i = 1; i <= n; i++)
 {
-    if (amžius2 < 19)
-    {
-        Console.WriteLine($"{vardas}, tau dar negalima balsuoti.");
-    }
-    else if (amžius2 < 66)
-    {
-        Console.WriteLine($"{vardas}, tu gali balsuoti.");
-    }
-    else if (amžius2 > 65)
-    {
-        Console.WriteLine($"{vardas}, tu esi pensinio amžiaus");
-    }
-}
-else
-{
-    Console.WriteLine("Įvestas neteisingas amžius.");
+    Console.WriteLine(i);
 }
