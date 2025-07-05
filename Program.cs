@@ -142,8 +142,6 @@
 // Console.Write("Task6 - Done ");
 
 //Task7
-using System.Formats.Asn1;
-
 Console.WriteLine("Įveskite skaičių (pvz.-100 iki 100); ");
 string? number4 = Console.ReadLine();
 if (int.TryParse(number4, out int rezult4))
@@ -163,7 +161,7 @@ if (int.TryParse(number4, out int rezult4))
 }
 else
 {
-    Console.Write("ivestas neteisingas skaicius");
+    Console.Write("ivestas neteisingas skaicius(int)");
 }
 
 
