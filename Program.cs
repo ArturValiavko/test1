@@ -201,7 +201,6 @@
 Console.WriteLine("Įvesk skaičių A:");
 string? a1 = Console.ReadLine();
 int.TryParse(a1, out int a);
-
 Console.WriteLine("Įvesk skaičių B:");
 string? b1 = Console.ReadLine();
 int.TryParse(b1, out int b);
