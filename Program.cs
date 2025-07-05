@@ -56,88 +56,116 @@
 //     Console.WriteLine("Neteisingas skaičius double formatui");
 // }
 
-Console.WriteLine("Ar šiandien šilta (t/n)? :"); // bool 
-string? tekst2 = Console.ReadLine()?.ToUpper();
+// Console.WriteLine("Ar šiandien šilta (t/n)? :"); // bool 
+// string? tekst2 = Console.ReadLine()?.ToUpper();
 
-if (tekst2 == "T"|| tekst2 == "N" )
+// if (tekst2 == "T"|| tekst2 == "N" )
+// {
+//     bool jamšilta = tekst2 == "T";
+//     Console.WriteLine(jamšilta
+//     ? "TAIP, TAU ŠILTA!"
+//     : "NE, TAU ŠALTA");
+// }
+// else
+// {
+//     Console.WriteLine("Neteisinga bool formatui");
+// }
+
+
+// string korta = "♦♣♠♥"; //char
+// Console.WriteLine("Pasirink vieną 1 - ♦ / 2 - ♣ / 3 - ♠ / 4 - ♥:"); 
+// string? number3 = Console.ReadLine();
+// if (int.TryParse(number3, out int result3))
+// {
+//     if (1 == result3)
+//     {
+//         char simbolis = korta[0];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (2 == result3)
+//     {
+//           char simbolis = korta[1];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (3 == result3)
+//     {
+//           char simbolis = korta[2];
+//         Console.WriteLine($"{simbolis}");
+//     }
+//     else if (4 == result3)
+//     {
+//           char simbolis = korta[3];
+//         Console.WriteLine($"{simbolis}");
+//     }
+
+// }
+// else
+// {
+//     Console.WriteLine("Neteisingas formatas");
+// }
+
+
+// //Task5
+// Console.WriteLine("Įvesk savo vardą:");
+// string? vardas1 = Console.ReadLine();
+
+// Console.WriteLine("Įvesk savo amžių:");
+// string? amžius = Console.ReadLine()?.ToUpper();
+// if (int.TryParse(amžius, out int amžius2))
+// {
+//     if (amžius2 < 19)
+//     {
+//         Console.WriteLine($"{vardas1}, tau dar negalima balsuoti.");
+//     }
+//     else if (amžius2 < 66)
+//     {
+//         Console.WriteLine($"{vardas1}, tu gali balsuoti.");
+//     }
+//     else if (amžius2 > 65)
+//     {
+//         Console.WriteLine($"{vardas1}, tu esi pensinio amžiaus");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Įvestas neteisingas amžius.");
+// }
+
+// //Task 6 
+// int n;
+// Console.Write("Įveskite skaičių n: ");
+// n = Convert.ToInt32(Console.ReadLine()); // greitas konvertavimas 
+// for (int i = 1; i <= n; i++)
+// {
+//     Console.WriteLine(i);
+// }
+// Console.Write("Task6 - Done ");
+
+//Task7
+using System.Formats.Asn1;
+
+Console.WriteLine("Įveskite skaičių (pvz.-100 iki 100); ");
+string? number4 = Console.ReadLine();
+if (int.TryParse(number4, out int rezult4))
 {
-    bool jamšilta = tekst2 == "T";
-    Console.WriteLine(jamšilta
-    ? "TAIP, TAU ŠILTA!"
-    : "NE, TAU ŠALTA");
+    if (rezult4 < 0)
+    {
+        Console.WriteLine($"Skaičius {rezult4} yra neigiamas");
+    }
+    else if (rezult4 == 0)
+    {
+        Console.Write($"Skaičius {rezult4} yra nulis");
+    }
+    else if (rezult4 > 0)
+    {
+        Console.Write($"Skaičius {rezult4} yra teigiamas");
+    }
 }
 else
 {
-    Console.WriteLine("Neteisinga bool formatui");
+    Console.Write("ivestas neteisingas skaicius");
 }
 
 
-string korta = "♦♣♠♥"; //char
-Console.WriteLine("Pasirink vieną 1 - ♦ / 2 - ♣ / 3 - ♠ / 4 - ♥:"); 
-string? number3 = Console.ReadLine();
-if (int.TryParse(number3, out int result3))
-{
-    if (1 == result3)
-    {
-        char simbolis = korta[0];
-        Console.WriteLine($"{simbolis}");
-    }
-    else if (2 == result3)
-    {
-          char simbolis = korta[1];
-        Console.WriteLine($"{simbolis}");
-    }
-    else if (3 == result3)
-    {
-          char simbolis = korta[2];
-        Console.WriteLine($"{simbolis}");
-    }
-    else if (4 == result3)
-    {
-          char simbolis = korta[3];
-        Console.WriteLine($"{simbolis}");
-    }
 
-}
-else
-{
-    Console.WriteLine("Neteisingas formatas");
-}
-
-
-//Task5
-Console.WriteLine("Įvesk savo vardą:");
-string? vardas1 = Console.ReadLine();
-
-Console.WriteLine("Įvesk savo amžių:");
-string? amžius = Console.ReadLine()?.ToUpper();
-if (int.TryParse(amžius, out int amžius2))
-{
-    if (amžius2 < 19)
-    {
-        Console.WriteLine($"{vardas1}, tau dar negalima balsuoti.");
-    }
-    else if (amžius2 < 66)
-    {
-        Console.WriteLine($"{vardas1}, tu gali balsuoti.");
-    }
-    else if (amžius2 > 65)
-    {
-        Console.WriteLine($"{vardas1}, tu esi pensinio amžiaus");
-    }
-}
-else
-{
-    Console.WriteLine("Įvestas neteisingas amžius.");
-}
-
-//Task 6 
-int n;
-Console.Write("Įveskite skaičių n: ");
-n = Convert.ToInt32(Console.ReadLine()); // greitas konvertavimas 
-for (int i = 1; i <= n; i++)
-{
-    Console.WriteLine(i);
-}
-Console.Write("Task6 - Done ");
 
