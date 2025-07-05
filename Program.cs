@@ -141,27 +141,60 @@
 // }
 // Console.Write("Task6 - Done ");
 
-//Task7
-Console.WriteLine("Įveskite skaičių (pvz.-100 iki 100); ");
-string? number4 = Console.ReadLine();
-if (int.TryParse(number4, out int rezult4))
+// //Task7
+// Console.WriteLine("Įveskite skaičių (pvz.-100 iki 100); ");
+// string? number4 = Console.ReadLine();
+// if (int.TryParse(number4, out int rezult4))
+// {
+//     if (rezult4 < 0)
+//     {
+//         Console.WriteLine($"Skaičius {rezult4} yra neigiamas");
+//     }
+//     else if (rezult4 == 0)
+//     {
+//         Console.Write($"Skaičius {rezult4} yra nulis");
+//     }
+//     else if (rezult4 > 0)
+//     {
+//         Console.Write($"Skaičius {rezult4} yra teigiamas");
+//     }
+// }
+// else
+// {
+//     Console.Write("ivestas neteisingas skaicius(int)");
+// }
+
+
+//Task8 
+using System.Diagnostics;
+
+Console.WriteLine("Įvesk pažimį:");
+string? number5 = Console.ReadLine();
+int.TryParse(number5, out int rezult5);
+
+switch (rezult5)
 {
-    if (rezult4 < 0)
-    {
-        Console.WriteLine($"Skaičius {rezult4} yra neigiamas");
-    }
-    else if (rezult4 == 0)
-    {
-        Console.Write($"Skaičius {rezult4} yra nulis");
-    }
-    else if (rezult4 > 0)
-    {
-        Console.Write($"Skaičius {rezult4} yra teigiamas");
-    }
-}
-else
-{
-    Console.Write("ivestas neteisingas skaicius(int)");
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        Console.WriteLine("Nepatenkinamai");
+        break;
+    case 5:
+    case 6:
+        Console.WriteLine("Patenkinamai");
+        break;
+    case 7:
+    case 8:
+        Console.WriteLine("Gerai");
+        break;
+    case 9:
+    case 10:
+        Console.WriteLine("Puikiai");
+        break;
+    case 0:
+        Console.WriteLine("neteisingas formatas");
+        break;       
 }
 
 
