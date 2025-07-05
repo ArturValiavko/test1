@@ -165,38 +165,53 @@
 // }
 
 
-//Task8 
-using System.Diagnostics;
+// //Task8 
+// using System.Diagnostics;
 
-Console.WriteLine("Įvesk pažimį:");
-string? number5 = Console.ReadLine();
-int.TryParse(number5, out int rezult5);
+// Console.WriteLine("Įvesk pažimį:");
+// string? number5 = Console.ReadLine();
+// int.TryParse(number5, out int rezult5);
 
-switch (rezult5)
-{
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-        Console.WriteLine("Nepatenkinamai");
-        break;
-    case 5:
-    case 6:
-        Console.WriteLine("Patenkinamai");
-        break;
-    case 7:
-    case 8:
-        Console.WriteLine("Gerai");
-        break;
-    case 9:
-    case 10:
-        Console.WriteLine("Puikiai");
-        break;
-    case 0:
-        Console.WriteLine("neteisingas formatas");
-        break;       
-}
+// switch (rezult5)
+// {
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//         Console.WriteLine("Nepatenkinamai");
+//         break;
+//     case 5:
+//     case 6:
+//         Console.WriteLine("Patenkinamai");
+//         break;
+//     case 7:
+//     case 8:
+//         Console.WriteLine("Gerai");
+//         break;
+//     case 9:
+//     case 10:
+//         Console.WriteLine("Puikiai");
+//         break;
+//     case 0:
+//         Console.WriteLine("neteisingas formatas");
+//         break;       
+// }
 
+//Task9
+Console.WriteLine("Įvesk skaičių A:");
+string? a1 = Console.ReadLine();
+int.TryParse(a1, out int a);
 
+Console.WriteLine("Įvesk skaičių B:");
+string? b1 = Console.ReadLine();
+int.TryParse(b1, out int b);
 
+int Sum = (a + b);
+int skirt = (a - b);
+int daug = (a * b);
+int dalyb = (a / b);
 
+Console.WriteLine($"Suma:{Sum}");
+Console.WriteLine($"Skirtumas:{skirt}");
+Console.WriteLine($"Daugyba:{daug}");
+Console.WriteLine($"Dalyba:{dalyb}");
