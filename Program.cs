@@ -197,20 +197,69 @@
 //         break;       
 // }
 
-//Task9
+// //Task9
+// using System.Reflection.Metadata.Ecma335;
+
+// Console.WriteLine("Įvesk skaičių A:");
+// string? a1 = Console.ReadLine();
+// int.TryParse(a1, out int a);
+
+// Console.WriteLine("Įvesk skaičių B:");
+// string? b1 = Console.ReadLine();
+// int.TryParse(b1, out int b);
+
+// int Sum = (a + b);
+// int skirt = (a - b);
+// int daug = (a * b);
+// if (a != 0)
+// {
+//     if (b != 0)
+//     {
+//         int dalyb = (a / b);
+//         Console.WriteLine($"Dalyba:{dalyb}");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Dalyba iš nulio negalima! (b = 0)");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Dalyba iš nulio negalima! (A = 0)");
+// }
+
+// Console.WriteLine($"Suma:{Sum}");
+// Console.WriteLine($"Skirtumas:{skirt}");
+// Console.WriteLine($"Daugyba:{daug}");
+
+//Task10
 Console.WriteLine("Įvesk skaičių A:");
-string? a1 = Console.ReadLine();
-int.TryParse(a1, out int a);
+string? num1 = Console.ReadLine();
+if (!int.TryParse(num1, out int lyginimas1))
+{
+    Console.WriteLine("Neteisingas skaičius A");
+    return;
+}
+
 Console.WriteLine("Įvesk skaičių B:");
-string? b1 = Console.ReadLine();
-int.TryParse(b1, out int b);
+string? num2 = Console.ReadLine();
+if (!int.TryParse(num2, out int lyginimas2))
+{
+      Console.WriteLine("Neteisingas skaičius B");
+    return;
+}
 
-int Sum = (a + b);
-int skirt = (a - b);
-int daug = (a * b);
-int dalyb = (a / b);
 
-Console.WriteLine($"Suma:{Sum}");
-Console.WriteLine($"Skirtumas:{skirt}");
-Console.WriteLine($"Daugyba:{daug}");
-Console.WriteLine($"Dalyba:{dalyb}");
+
+if (lyginimas1 > lyginimas2)
+{
+    Console.WriteLine($"Skaičius A = {lyginimas1} yra didesnis už skaičių B = {lyginimas2} ");
+}
+if (lyginimas1 == lyginimas2)
+{
+    Console.WriteLine($"Skaičiai A = {lyginimas1} ir B = {lyginimas2} yra lygus");
+}
+if (lyginimas1 < lyginimas2)
+{
+    Console.WriteLine($"Skaičius B = {lyginimas2} yra didesnis už skaičių A = {lyginimas1}");
+}
