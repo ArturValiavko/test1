@@ -201,6 +201,7 @@
 Console.WriteLine("Įvesk skaičių A:");
 string? a1 = Console.ReadLine();
 int.TryParse(a1, out int a);
+
 Console.WriteLine("Įvesk skaičių B:");
 string? b1 = Console.ReadLine();
 int.TryParse(b1, out int b);
@@ -208,9 +209,24 @@ int.TryParse(b1, out int b);
 int Sum = (a + b);
 int skirt = (a - b);
 int daug = (a * b);
-int dalyb = (a / b);
+if (a != 0)
+{
+    if (b != 0)
+    {
+        int dalyb = (a / b);
+        Console.WriteLine($"Dalyba:{dalyb}");
+    }
+    else
+    {
+        Console.WriteLine("Įvesk skaasdasd1:");
+    }
+}
+else
+{
+    Console.WriteLine("Įvesk skaasdasd:");
+}
 
 Console.WriteLine($"Suma:{Sum}");
 Console.WriteLine($"Skirtumas:{skirt}");
 Console.WriteLine($"Daugyba:{daug}");
-Console.WriteLine($"Dalyba:{dalyb}");
+
