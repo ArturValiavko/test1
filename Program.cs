@@ -166,7 +166,6 @@
 
 
 // //Task8 
-// using System.Diagnostics;
 
 // Console.WriteLine("Įvesk pažimį:");
 // string? number5 = Console.ReadLine();
@@ -198,7 +197,6 @@
 // }
 
 // //Task9
-// using System.Reflection.Metadata.Ecma335;
 
 // Console.WriteLine("Įvesk skaičių A:");
 // string? a1 = Console.ReadLine();
@@ -232,34 +230,70 @@
 // Console.WriteLine($"Skirtumas:{skirt}");
 // Console.WriteLine($"Daugyba:{daug}");
 
-//Task10
-Console.WriteLine("Įvesk skaičių A:");
-string? num1 = Console.ReadLine();
-if (!int.TryParse(num1, out int lyginimas1))
+// //Task10
+// Console.WriteLine("Įvesk skaičių A:");
+// string? num1 = Console.ReadLine();
+// if (!int.TryParse(num1, out int lyginimas1))
+// {
+//     Console.WriteLine("Neteisingas skaičius A");
+//     return;
+// }
+
+// Console.WriteLine("Įvesk skaičių B:");
+// string? num2 = Console.ReadLine();
+// if (!int.TryParse(num2, out int lyginimas2))
+// {
+//       Console.WriteLine("Neteisingas skaičius B");
+//     return;
+// }
+
+
+
+// if (lyginimas1 > lyginimas2)
+// {
+//     Console.WriteLine($"Skaičius A = {lyginimas1} yra didesnis už skaičių B = {lyginimas2} ");
+// }
+// if (lyginimas1 == lyginimas2)
+// {
+//     Console.WriteLine($"Skaičiai A = {lyginimas1} ir B = {lyginimas2} yra lygus");
+// }
+// if (lyginimas1 < lyginimas2)
+// {
+//     Console.WriteLine($"Skaičius B = {lyginimas2} yra didesnis už skaičių A = {lyginimas1}");
+// }
+
+
+//Task11
+
+Console.WriteLine("Įvesk amžių");
+string? num3 = Console.ReadLine();
+
+if (int.TryParse(num3, out int result4))
 {
-    Console.WriteLine("Neteisingas skaičius A");
-    return;
+    if (result4 < 0)
+    {
+        Console.WriteLine($"{result4} įvestas blogas skaičius");
+    }
+    else if (result4 < 13)
+    {
+        Console.WriteLine($"{result4} metų - Vaikas");
+    }
+    else if (result4 < 18)
+    {
+        Console.WriteLine($"{result4} metų - Paauglys");
+    }
+    else if (result4 < 65)
+    {
+        Console.WriteLine($"{result4} metų - Suaugęs");
+    }
+    else 
+    {
+        Console.WriteLine($"{result4} metų - Senjoras");
+    }
+
+}
+else
+{
+    Console.WriteLine($"Neteisingas formatas");
 }
 
-Console.WriteLine("Įvesk skaičių B:");
-string? num2 = Console.ReadLine();
-if (!int.TryParse(num2, out int lyginimas2))
-{
-      Console.WriteLine("Neteisingas skaičius B");
-    return;
-}
-
-
-
-if (lyginimas1 > lyginimas2)
-{
-    Console.WriteLine($"Skaičius A = {lyginimas1} yra didesnis už skaičių B = {lyginimas2} ");
-}
-if (lyginimas1 == lyginimas2)
-{
-    Console.WriteLine($"Skaičiai A = {lyginimas1} ir B = {lyginimas2} yra lygus");
-}
-if (lyginimas1 < lyginimas2)
-{
-    Console.WriteLine($"Skaičius B = {lyginimas2} yra didesnis už skaičių A = {lyginimas1}");
-}
