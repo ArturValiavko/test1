@@ -296,7 +296,7 @@ else
 {
     Console.WriteLine($"Neteisingas formatas");
 }
-*/
+
 
 //Task12 
 
@@ -313,3 +313,43 @@ if (int.TryParse(num4, out int kartok))
         }
     }
 }
+*/
+
+//Taks13
+
+int inppass = 0 ;
+int pass = 1234;
+
+  Console.WriteLine("Pabandyk atspėti mano pin (pvz. 1234)");
+string? input1 = Console.ReadLine();
+
+int.TryParse(input1, out int pass1);
+inppass = pass1;
+//Console.WriteLine((pass, pass1, inppass));
+
+while (pass != inppass)
+{
+    Console.WriteLine("Pabandyk dar karta atspėti mano pin (pvz. 1234)");
+    string? input2 = Console.ReadLine();
+    int.TryParse(input2, out int pass2);
+    inppass = pass2;
+    //Console.WriteLine((pass, pass2, inppass));
+}
+//task 13.1 teisingesnis 
+
+  int pass = 1234;
+  int inppass = 0;
+
+        while (inppass != pass)
+        {
+            Console.WriteLine("Pabandyk atspėti mano PIN (pvz. 1234):");
+            string? input = Console.ReadLine();
+            if (!int.TryParse(input, out inppass))
+            {
+                Console.WriteLine("Blogas formatas! Įveskite skaičių.");
+                continue;
+            }
+        }
+ Console.WriteLine("Sveikiname! Teisingas PIN.");   
+
+ 
