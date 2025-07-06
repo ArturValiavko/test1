@@ -264,7 +264,7 @@
 
 
 //Task11
-
+/*
 Console.WriteLine("Įvesk amžių");
 string? num3 = Console.ReadLine();
 
@@ -296,4 +296,20 @@ else
 {
     Console.WriteLine($"Neteisingas formatas");
 }
+*/
 
+//Task12 
+
+Console.WriteLine("Įvesk skaičiu, kiek kartu bus kartojama programa");
+string? num4 = Console.ReadLine();
+
+if (int.TryParse(num4, out int kartok))
+{
+    for (int i = 1; i <= kartok; i++) // kartok + 1 veikia taip pat. 
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
