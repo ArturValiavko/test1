@@ -15,4 +15,4 @@ Tikslas: do-while ciklas, int sum, sąlyga while (input != 0))
 4. Task4-Task6 git workflow simuliavimas 
 
 
-# Smagus būdas pasimokyti Git branching https://learngitbranching.js.org/
+0. Smagus būdas pasimokyti Git branching https://learngitbranching.js.org/
